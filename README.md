@@ -305,35 +305,295 @@ A successful test reports Pi-hole's current state, blocked requests and block pe
 
 # Quote Packs
 
-RICK-HOLE supports interchangeable JSON quote banks.
+RICK-HOLE supports interchangeable JSON quote banks. The phrase shown on screen is selected from the category that matches Rick's current mood / Pi-hole state, so the display changes personality as network activity changes.
 
-## Unhinged
+The included packs contain:
+
+- **Default / Cleaner:** 19 phrases
+- **Unhinged:** 169 phrases
+- Categories: `idle`, `success`, `tech`, `exclaim`, `angry`, `sleep`, `failure`
+
+The quote normally changes alongside the animation cycle, so Rick isn't stuck saying the same thing all day.
+
+## Use the Unhinged Pack
 
 ```bash
 sudo cp quotes/unhinged.json /etc/pihole-eink-text.json
 sudo systemctl restart pihole-eink
 ```
 
-## Default / Cleaner
+## Use the Default / Cleaner Pack
 
 ```bash
 sudo cp quotes/default.json /etc/pihole-eink-text.json
 sudo systemctl restart pihole-eink
 ```
 
-Quote categories are mapped to the current face / state:
+## All Included Phrases
+
+The lists below are generated from the actual JSON quote files shipped in this repository, so these are the phrases the included packs can display.
+
+<details>
+<summary><strong>Default / Cleaner Pack — 19 phrases</strong></summary>
+
+### Idle / Bored
+
+- Morty, this network is boring.
+- Nothing exciting to block.
+
+### Success / Happy
+
+- Wubba lubba dub dub!
+- Another one bites the DNS.
+- Blocked it, Morty.
+
+### Tech / Smart
+
+- Science, Morty!
+- DNS is just applied science.
+- Look at those queries.
+
+### Excited
+
+- Now we're talking!
+- That's a lot of junk!
+- Get schwifty with DNS!
+
+### Angry
+
+- Who invited all these trackers?
+- Get this garbage off my network!
+- Enough ads already!
+
+### Sleep / Paused
+
+- I'm sleeping, Morty.
+- Wake me when DNS is back.
+
+### Failure / Broken
+
+- Something's broken, Morty!
+- DNS has gone sideways.
+- Check the service logs!
+
+</details>
+
+<details>
+<summary><strong>Unhinged Pack — 169 phrases</strong></summary>
+
+> ⚠️ Contains strong language, insults and general Rick-style abuse. That's the point.
+
+### Idle / Bored
+
+- Morty, this network is boring.
+- Nothing exciting to block.
+- Fuck me, this is boring.
+- Morty, do something useful.
+- Nothing to kill. Pathetic.
+- This network's dead inside.
+- Wake me when shit breaks.
+- Morty, I'm losing brain cells.
+- Even Jerry's more exciting.
+- Aw geez, Rick. DNS again?
+- Aw man, that's a lot of ads.
+- Classic Jerry bullshit.
+- Don't touch it, Jerry.
+- Summer > Jerry. Obviously.
+- Your telemetry bores me.
+- Another pathetic request.
+- Slippery Stair strikes again.
+- Morty, where are my schmeckles?
+
+### Success / Happy
+
+- Wubba lubba dub dub!
+- Another one bites the DNS.
+- Blocked it, Morty.
+- Blocked it, you little bitch.
+- Another fucker gone.
+- Eat shit, telemetry.
+- Fuck off, ad server.
+- Another tracker fucking dead.
+- Beautiful. Fucking beautiful.
+- Blocked. Deleted. Get fucked.
+- DNS wins, bitch.
+- Another tracker dead.
+- Rick-Hole says no.
+- Blocked it, dickhead.
+- Another ad bites it.
+- Look at me! I'm blocking shit!
+- Can do! Block that bastard.
+- Ooh wee! Another one blocked.
+- The tracker must die.
+- Blocking is preferable.
+- Get squanched, ad server.
+- Predictable. Blocked.
+- Block that shit, bitch!
+- Oh boy, here I block again.
+- I just love killing trackers.
+- Another clean kill.
+- Rick-Hole says no, bitch.
+
+### Tech / Smart
+
+- Science, Morty!
+- DNS is just applied science.
+- Look at those queries.
+- DNS science, motherfucker.
+- Science, bitch. Keep up.
+- Packets don't lie, Morty.
+- Your DNS smells like shit.
+- Look at this fucking traffic.
+- I weaponised fucking DNS.
+- Morty, sniff this packet.
+- That's some filthy telemetry.
+- Morty, sniff this.
+- You smackhead, Morty.
+- You're a bitch, Morty.
+- Morty, don't touch that.
+- Jerry could do better.
+- Beth would've fixed this.
+- Beth says kill the tracker.
+- Meeseeks hates telemetry.
+- Your DNS lacks honour.
+- Telemetry is without purpose.
+- Freedom starts with DNS.
+- Rick would've blocked that.
+- That's some fucked-up traffic.
+- My gears hate this domain.
+- Don't grind my fucking gears.
+- Portal this shit to hell.
+- Citadel DNS says fuck off.
+- Wrong dimension, asshole.
+- Send that tracker to C-137.
+- Interdimensional bullshit.
+- Change the fucking channel.
+- Even aliens hate telemetry.
+
+### Excited
+
+- Now we're talking!
+- That's a lot of junk!
+- Get schwifty with DNS!
+- Holy shit, Morty!
+- Now we're fucking cooking!
+- That's a shitload of blocks!
+- Fuck yes! More garbage!
+- Keep 'em coming, assholes.
+- Look at that fucking counter!
+- This shit's getting spicy.
+- Wubba lubba fuckin' dub dub!
+- Jesus Christ, Morty.
+- Look at this shit, Morty.
+- Rick, what the fuck?!
+- Summer says block that shit.
+- Gross. Fucking trackers.
+- Rick, delete this garbage.
+- Ads are fucking embarrassing.
+- Another family disaster.
+- Ooh wee, that's fucked up.
+- Ooh wee, fuck that tracker.
+- That domain's a real asshole.
+- Let's fucking squanch this.
+- Squanch that tracker!
+- What the squanch is this?
+- Welcome to DNS, bitch!
+- Sweet dreams, bitch!
+- No ads in my nightmare, bitch!
+- Target acquired. Fuck it.
+- Slippery Stair, save my ass.
+- Use the fucking stairs, Morty.
+- Watch the stairs, dumbass.
+- That cost me 25 schmeckles.
+- Worth every fucking schmeckle.
+- Not a single schmeckle more.
+- Pay me in schmeckles, bitch.
+- That's 50 fucking schmeckles.
+- Schmeckles well fucking spent.
+- 25 schmeckles? Fucking robbery.
+- Fuck DNS. I want schmeckles.
+- Where are my schmeckles?
+
+### Angry
+
+- Who invited all these trackers?
+- Get this garbage off my network!
+- Enough ads already!
+- Who let this shit in?
+- Fuck off, trackers!
+- Get this shit off my network.
+- Morty, you useless bastard.
+- What the fuck is this domain?
+- Nope. Fuck you. Blocked.
+- Telemetry can eat shit.
+- I'll block your whole bloodline.
+- This network is fucked.
+- Nice try, telemetry.
+- Fuck off, trackers.
+- Nope. Blocked. Fuck off.
+- Jerry fucked up the DNS.
+- Jerry clicked the fucking ad.
+- Even Jerry could block that.
+- Jerry, you useless bastard.
+- Jerry, stop touching shit.
+- Existence is fucking pain.
+- Make the DNS request stop!
+- Slippery Stair, you bastard.
+- Slippery Stair says fuck you.
+- Morty, that's my last schmeckle.
+
+### Sleep / Paused
+
+- I'm sleeping, Morty.
+- Wake me when DNS is back.
+- Fuck off, I'm sleeping.
+- Not now, Morty.
+- Wake me when DNS dies.
+- Go bother Jerry.
+- I'm too drunk for this shit.
+- Pause means fuck off.
+- Morty, shut the fuck up.
+- I-I think you broke it, Rick.
+
+### Failure / Broken
+
+- Something's broken, Morty!
+- DNS has gone sideways.
+- Check the service logs!
+- Oh fuck, DNS is dead.
+- You broke it, Morty.
+- Everything's fucked.
+- DNS shit the fucking bed.
+- Well, that's fucking broken.
+- Morty, fix this shit.
+- Great. We're fucked.
+- Check the fucking logs.
+- Rick, this feels illegal.
+- Something's fucked, Morty.
+- Meeseeks can't fix this shit.
+- This DNS is fucking cursed.
+
+</details>
+
+
+You can add, remove or rewrite phrases by editing:
 
 ```text
-idle
-success
-tech
-exclaim
-angry
-sleep
-failure
+quotes/default.json
+quotes/unhinged.json
 ```
 
-That means a bored Rick can say different things from an angry or broken Rick.
+or the active quote file on the Pi:
+
+```text
+/etc/pihole-eink-text.json
+```
+
+After changing the active quote file:
+
+```bash
+sudo systemctl restart pihole-eink
+```
 
 ---
 
