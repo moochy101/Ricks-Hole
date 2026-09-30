@@ -75,15 +75,20 @@ The PNG is saved **before** the physical-display rotation is applied, so a Pi in
 
 ---
 
-## Face / Mood Example
+## Face / Mood Examples
 
-This is a crop of the **actual face currently rendered by RICK-HOLE**, taken directly from the live screen above:
+These are examples from the **actual face artwork used during development**, including the three original face images from the project and the live face currently shown on the Pi-hole dashboard.
 
-<p align="center">
-  <img src="docs/images/face-live.png" alt="Actual RICK-HOLE face example" width="220">
-</p>
+<table>
+  <tr>
+    <td align="center"><strong>Original Face 1</strong><br><img src="docs/images/original-face-1.png" width="170"></td>
+    <td align="center"><strong>Original Face 2</strong><br><img src="docs/images/original-face-2.png" width="170"></td>
+    <td align="center"><strong>Original Face 3</strong><br><img src="docs/images/original-face-3.png" width="170"></td>
+    <td align="center"><strong>Live Dashboard Face</strong><br><img src="docs/images/face-live.png" width="170"></td>
+  </tr>
+</table>
 
-RICK-HOLE supports the following face assets:
+RICK-HOLE is designed around multiple moods / states:
 
 | Asset | Purpose |
 |---|---|
@@ -98,7 +103,15 @@ RICK-HOLE supports the following face assets:
 | `LOOK_L.png` | Animation frame |
 | `LOOK_R.png` | Animation frame |
 
-> The repository does not bundle the character artwork. Copy your own compatible 75×75 PNG assets into `assets/hologram/`. This keeps the public repository separate from third-party artwork.
+### Earlier compiled mood preview
+
+During development I also put together this six-screen mood sheet to visualise how different Rick expressions, states and quotes could work together. **This is an earlier concept render, not the exact current screen layout** shown above.
+
+<p align="center">
+  <img src="docs/images/compiled-mood-examples.png" alt="Earlier compiled RICK-HOLE mood examples" width="100%">
+</p>
+
+The runtime face pack itself is not included as a complete redistributable artwork pack. The images above are documentation / project examples. If you're building your own installation, use compatible **75×75 PNG** face assets in `assets/hologram/` and make sure you have the right to redistribute any artwork you publish.
 
 ---
 
