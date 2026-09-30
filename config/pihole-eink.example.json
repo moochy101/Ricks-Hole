@@ -1,0 +1,9 @@
+{
+  "api_url": "http://127.0.0.1/api",
+  "password": "CHANGE_ME",
+  "refresh_seconds": 180,
+  "rotation": 180,
+  "animation_seconds": 15,
+  "full_refresh_every": 5,
+  "web_preview_path": "/var/www/html/admin/img/rick-hole-live.png"
+}

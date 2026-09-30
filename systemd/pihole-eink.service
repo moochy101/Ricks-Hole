@@ -1,0 +1,22 @@
+[Unit]
+Description=RICK-HOLE Pi-hole statistics on Waveshare 2.13-inch V4 e-ink
+After=network-online.target pihole-FTL.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pihole-eink
+Group=pihole-eink
+SupplementaryGroups=spi gpio
+WorkingDirectory=/opt/pihole-eink
+ExecStart=/usr/bin/python3 /opt/pihole-eink/pihole_eink.py
+Restart=on-failure
+RestartSec=10
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/www/html/admin/img
+
+[Install]
+WantedBy=multi-user.target

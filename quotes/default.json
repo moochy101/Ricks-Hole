@@ -1,0 +1,46 @@
+{
+  "title": "RICK-HOLE",
+  "status": {
+    "enabled": "BLOCKING",
+    "disabled": "PAUSED",
+    "failed": "DNS FAILED",
+    "unknown": "UNKNOWN",
+    "error": "API ERROR"
+  },
+  "quotes": {
+    "idle": [
+      "Morty, this network is boring.",
+      "Nothing exciting to block."
+    ],
+    "success": [
+      "Wubba lubba dub dub!",
+      "Another one bites the DNS.",
+      "Blocked it, Morty."
+    ],
+    "tech": [
+      "Science, Morty!",
+      "DNS is just applied science.",
+      "Look at those queries."
+    ],
+    "exclaim": [
+      "Now we're talking!",
+      "That's a lot of junk!",
+      "Get schwifty with DNS!"
+    ],
+    "angry": [
+      "Who invited all these trackers?",
+      "Get this garbage off my network!",
+      "Enough ads already!"
+    ],
+    "sleep": [
+      "I'm sleeping, Morty.",
+      "Wake me when DNS is back."
+    ],
+    "failure": [
+      "Something's broken, Morty!",
+      "DNS has gone sideways.",
+      "Check the service logs!"
+    ]
+  },
+  "quote_font_size": 10
+}
